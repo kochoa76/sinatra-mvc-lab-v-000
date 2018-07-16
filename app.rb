@@ -8,6 +8,6 @@ class App < Sinatra::Base
   end
 
   post "/user_input" do
-    PigLatinizer.new(params:user_text)
+    PigLatinizer.new([params:user_text])
     end
 end
